@@ -1,0 +1,15 @@
+function FizzBuzz(number){
+    let sum=0;
+    while(number){
+        sum+=number%10;
+        number/=10;
+    }
+    var string = "";
+    for(let i=1;i<=sum;i++){
+        if(i%4==0 && i%5==0) string+="FizzBuzz ";
+        else if(i%4==0) string+="Fizz ";
+        else if(i%5==0) string+="Buzz ";
+        else string+=i;
+    }
+    return string;
+}
